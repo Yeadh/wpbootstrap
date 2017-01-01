@@ -4,10 +4,15 @@
 
     //Theme Support
     function wpb_theme_setup() {
+
+        //Enable featured Image
+        add_theme_support( 'post-thumbnails' );
+
         //Nav Menus
         register_nav_menus( array(
             'primary' => __( 'Primary Menu', 'THEMENAME' ),
         ) );
+        
     }
 
     add_action( 'after_setup_theme', 'wpb_theme_setup' );
