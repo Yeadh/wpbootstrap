@@ -242,32 +242,54 @@ h6, .h6 {
 }
 
 .comments {
-  border: 1px #ccc solid;
+  border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 20px;
   margin-top: 10px;
 }
 
+.comments li {
+  list-style-type: none;
+}
+
 .comments h3, .comments h2 {
   background: #428bca;
-  color: #333;
+  color: #fff;
   padding: 5px;
 }
 
-.comments-body {
+.comment-body {
   border: #ccc solid 1px;
   margin-bottom: 10px;
   padding: 20px 10px;
 }
 
-.comments-meta {
+.comment-meta {
   background-color: #428bca;
   color: #fff;
   padding: 10px;
-  overflow: auto;
+  overflow: hidden;
 }
 
-.comments-meta img {
+.comment-meta a {
+  color: #fff;
+}
+
+.comment-meta img {
   float: left;
   margin-right: 10px;
+}
+
+.comment-reply-link {
+  background-color: #428bca;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.comment-form input, .comment-form textarea {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
 }
