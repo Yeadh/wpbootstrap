@@ -240,3 +240,34 @@ h6, .h6 {
   height: auto;
   margin-bottom: 8px;
 }
+
+.comments {
+  border: 1px #ccc solid;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.comments h3, .comments h2 {
+  background: #428bca;
+  color: #333;
+  padding: 5px;
+}
+
+.comments-body {
+  border: #ccc solid 1px;
+  margin-bottom: 10px;
+  padding: 20px 10px;
+}
+
+.comments-meta {
+  background-color: #428bca;
+  color: #fff;
+  padding: 10px;
+  overflow: auto;
+}
+
+.comments-meta img {
+  float: left;
+  margin-right: 10px;
+}
