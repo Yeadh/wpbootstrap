@@ -14,7 +14,7 @@
         ) );
 
         //Post Formats
-        add_theme_support('post-formats', array('aside', 'gallery'));
+        add_theme_support('post-formats', array('aside', 'gallery', 'quote'));
         
     }
 
@@ -38,7 +38,7 @@
             'before_widget' => '<div class="sidebar-module">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4>',
-            'after_title'  => '<h4>'
+            'after_title'   => '<h4>'
         ));
 
         register_sidebar(array(
@@ -47,7 +47,7 @@
             'before_widget' => '<div class="box">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3>',
-            'after_title'  => '<h3>'
+            'after_title'   => '<h3>'
         ));
 
         register_sidebar(array(
@@ -56,7 +56,7 @@
             'before_widget' => '<div class="box">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3>',
-            'after_title'  => '<h3>'
+            'after_title'   => '<h3>'
         ));
 
         register_sidebar(array(
@@ -65,9 +65,13 @@
             'before_widget' => '<div class="box">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3>',
-            'after_title'  => '<h3>'
+            'after_title'   => '<h3>'
         ));
 
     }
 
     add_action('widgets_init', 'wpb_init_widgets');
+
+
+    //Customizer file
+    require get_template_directory(). '/inc/customizer.php';

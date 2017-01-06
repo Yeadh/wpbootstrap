@@ -19,6 +19,12 @@
     <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <?php wp_head();?> <!-- you need this if you want use a third part plugin for example -->
+    <style>
+        .showcase {
+            background: url(<?php echo get_theme_mod('showcase_image', get_bloginfo('template_url').'/img/showcase.jpg'); ?>) no-repeat center center;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
     <div class="blog-masthead">
@@ -42,9 +48,11 @@
     </div>
    <section class="showcase">
        <div class="container">
-           <h1>Custom Bootstrap Wordpress Theme</h1>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis autem, ipsum cum at, error libero veritatis doloribus earum. Delectus, optio!</p>
-           <div class="btn btn-primary btn-lg">Read More</div>
+           <h1><?php echo get_theme_mod( 'showcase_heading', 'Custom Bootstrap Wordpress Theme'); ?></h1>
+           <p><?php echo get_theme_mod( 'showcase_text', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'); ?></p>
+           <a href="<?php echo get_theme_mod( 'button_url', '#'); ?>">
+                <div class="btn btn-primary btn-lg"><?php echo get_theme_mod( 'button_text', 'Get Started'); ?></div>
+           </a>
        </div>
    </section>
 
