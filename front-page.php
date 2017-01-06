@@ -51,27 +51,21 @@
    <section class="boxes">
        <div class="container">
            <div class="row">
-               <div class="col-md-4">
-                   <div class="box">
-                       <i class="fa fa-group"></i>
-                       <h3>Lorem ipsum dolor.</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum aliquid dicta odio molestias quod, eos aliquam nam optio placeat reiciendis.</p>
-                   </div>
-               </div>
-               <div class="col-md-4">
-                   <div class="box">
-                       <i class="fa fa-gears"></i>
-                       <h3>Lorem ipsum dolor.</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum aliquid dicta odio molestias quod, eos aliquam nam optio placeat reiciendis.</p>
-                   </div>
-               </div>
-               <div class="col-md-4">
-                   <div class="box">
-                       <i class="fa fa-search"></i>
-                       <h3>Lorem ipsum dolor.</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum aliquid dicta odio molestias quod, eos aliquam nam optio placeat reiciendis.</p>
-                   </div>
-               </div>
+                <div class="col-md-4">
+                    <?php if(is_active_sidebar('box1')) : ?>
+                        <?php dynamic_sidebar( 'box1' ) ?>
+                    <?php endif; ?>
+                </div>
+                <div class="col-md-4">
+                    <?php if(is_active_sidebar('box2')) : ?>
+                        <?php dynamic_sidebar( 'box2' ) ?>
+                    <?php endif; ?>
+                </div>
+                <div class="col-md-4">
+                    <?php if(is_active_sidebar('box3')) : ?>
+                        <?php dynamic_sidebar( 'box3' ) ?>
+                    <?php endif; ?>
+                </div>
            </div>
        </div>
    </section>
