@@ -75,7 +75,7 @@
         $wp_customize->add_section('social', array(
             'title'         =>__('Social Networks', 'wpbootstrap'),
             'description'   => sprintf(__('Social network profiles','wpbootstrap')),
-            'priority'      => 150
+            'priority'      => 135
         ));
 
         //facebook
