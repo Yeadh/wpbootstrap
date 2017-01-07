@@ -85,7 +85,7 @@
             <li><a href="<?php echo get_theme_mod( 'facebook_profile_url', '#'); ?>" target="_blank"><i class="fa fa-facebook-official"></i> Facebook</a></li>
             <li><a href="<?php echo get_theme_mod( 'twitter_profile_url', '#'); ?>" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
         </ul>
-        <div class="text-right back-top"><a href="#">Back to top</a></div>
+        <div class="text-right back-top"><a href="#">Back to top ^ </i></a></div>
     </footer>
     <?php wp_footer(); ?>
 
