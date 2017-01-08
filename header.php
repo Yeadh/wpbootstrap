@@ -19,6 +19,11 @@
     <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <?php wp_head();?> <!-- you need this if you want use a third part plugin for example -->
+    <style>
+        :root{
+            --main-color: <?php echo get_theme_mod('main_color', '#428bca'); ?> ;
+        }
+    </style>
 </head>
 <body>
     <div class="blog-masthead">
