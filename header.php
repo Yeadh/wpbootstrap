@@ -29,6 +29,12 @@
     <div class="blog-masthead">
         <div class="container">
             <nav class="blog-nav">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                 </button>
                 <?php
                      wp_nav_menu( array(
                         'menu'              => 'primary',
@@ -43,8 +49,14 @@
                     );
                 ?>
             </nav>
-        </div>
-    </div>
+        </div> <!-- ./container -->
+        <div class="social-nav text-right">
+            <ul class="list-unstyled list-inline">
+                <li><a href="<?php echo get_theme_mod( 'facebook_profile_url', '#'); ?>" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+                <li><a href="<?php echo get_theme_mod( 'twitter_profile_url', '#'); ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+        </div><!-- ./social-nav -->
+    </div> <!-- ./blog-masthead -->
     <div class="container">
         <div class="blog-header">
             <h1 class="blog-title"><?php bloginfo( 'name' ) ?></h1>
