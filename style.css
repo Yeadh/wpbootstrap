@@ -381,5 +381,9 @@ h6, .h6 {
     width: 90%;
     height: 90%;
   }
-
+  .back-top {
+    margin: 0;
+    text-align: center;
+  }
+  
 }
