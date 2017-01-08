@@ -102,23 +102,21 @@
         ));
 
         /* Site Colors
-        -------------------------------------------------------- */ 
+        -------------------------------------------------------- */
+        //main color
+        $wp_customize->add_setting('main_color', array(
+            'default'       => '#428bca',
+            'transport'     => 'refresh'
+        ));
         $wp_customize->add_section('colors', array(
             'title'         =>__('Site Colors', 'wpbootstrap'),
-            'description'   => sprintf(__('Site Colors','wpbootstrap')),
             'priority'      => 120
         ));
-
-        //facebook
-        $wp_customize->add_setting('main_color', array(
-            'default'   => _x('#428bca', 'wpbootstrap' ),
-            'type'      => 'theme_mod'
-        ));
-        $wp_customize->add_control('main_color', array(
-            'label'     =>__('Main Color', 'wpbootstrap'),
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'theme_colors', array(
+            'label'     => __('Main Color', 'wpbootstrap'),
             'section'   => 'colors',
-            'priority'  => 1
-        ));
+            'settings'  => 'main_color'
+        )));
     }
     
     add_action( 'customize_register', 'wpb_customizer_register' );
