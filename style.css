@@ -87,6 +87,19 @@ h6, .h6 {
   text-decoration: none;
 }
 
+.blog-nav a {
+  color: var(--white);
+}
+
+.blog-nav a:hover {
+  background-color: var(--white);
+  color: var(--main-color);
+}
+
+.navbar-toggle .icon-bar {
+  background-color: var(--white);
+}
+
 /* Active state gets a caret at the bottom */
 .blog-nav .active {
   color: var(--white);
@@ -198,11 +211,21 @@ h6, .h6 {
 }
 
 
+/* ----------------------------------------------------
+    Custom Style
+   ---------------------------------------------------- */
 
-/* 
-* Custom Style
-*/
+/* Custom container for nav */
+.custom-container {
+  max-height: 50px;
+}
+@media (max-width: 767px) {
+  .custom-container {
+    max-height: 100%;
+  }
+}
 
+/* Showcase */
 .showcase{
   height: 600px;
   padding: 100px 20px;
@@ -223,6 +246,8 @@ h6, .h6 {
   margin-bottom: 50px;
 }
 
+
+/* Box widget */
 .boxes {
   text-align: center;
   background-color: var(--white)f;
@@ -239,21 +264,15 @@ h6, .h6 {
   margin-bottom: 10px;
 }
 
-.blog-nav a {
-  color: var(--white);
-}
-
-.blog-nav a:hover {
-  background-color: var(--white);
-  color: var(--main-color);
-}
-
+/* Post thumbnail */
 .post-thumb img{
   width: 100%;
   height: auto;
   margin-bottom: 8px;
 }
 
+
+/* Comment section */
 .comments {
   border: 1px solid var(--light-gray);
   padding: 10px;
@@ -307,28 +326,38 @@ h6, .h6 {
   margin-bottom: 15px;
 }
 
+
+/* Gallery post */
 .post-gallery {
   background-color: var(--dark-gray);
   padding: 10px;
   text-align: center;
 }
-
 .post-gallery h2{
   color: var(--gray);
 }
 
+
+/* back to top inside footer */
 .back-top {
   margin-right: 40px;
 }
 
+/* Social on nav-menu */
 .social-nav {
   float: right;
   position: relative;
   margin-right: 75px;
   top: -37px;
   font-size: 1.3em;
+  overflow: hidden;
 }
-
+@media (max-width: 767px) {
+  .social-nav {
+    display: none;
+    pointer-events: none;
+  }
+}
 .social-nav a {
   color: var(--white);
 }
@@ -336,6 +365,21 @@ h6, .h6 {
   color: var(--light-gray);
 }
 
-.navbar-toggle .icon-bar {
-  background-color: var(--white);
+
+
+/* ----------------------------------------------------
+    Mobile Style
+   ---------------------------------------------------- */
+@media (max-width: 767px) {
+
+  .blog-nav .active:after {
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .post-gallery img {
+    margin: 5px;
+    width: 90%;
+    height: 90%;
+  }
+
 }
