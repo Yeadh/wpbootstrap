@@ -320,3 +320,22 @@ h6, .h6 {
 .back-top {
   margin-right: 40px;
 }
+
+.social-nav {
+  float: right;
+  position: relative;
+  margin-right: 75px;
+  top: -37px;
+  font-size: 1.3em;
+}
+
+.social-nav a {
+  color: var(--white);
+}
+.social-nav a:hover {
+  color: var(--light-gray);
+}
+
+.navbar-toggle .icon-bar {
+  background-color: var(--white);
+}
