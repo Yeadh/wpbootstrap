@@ -1,4 +1,18 @@
 <?php
+
+//set up
+
+//Includes
+include (get_template_directory().'/inc/front/enqueue.php');
+require get_template_directory(). '/inc/customizer.php';
+
+//Action & Filter Hooks
+add_action( 'wp_enqueue_scripts', 'wpb_enqueue' );
+
+//Shortcuts
+
+
+
     //Register Nav Walker class_alias
     require_once('wp_bootstrap_navwalker.php');
 
@@ -74,4 +88,3 @@
 
 
     //Customizer file
-    require get_template_directory(). '/inc/customizer.php';
