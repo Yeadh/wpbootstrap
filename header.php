@@ -15,6 +15,9 @@
     </title>
     <!-- Bootstrap core CSS -->
     <link href="<?php bloginfo('template_url');?>/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_url');?>/assets/css/doc-style.css" rel="stylesheet">
+    <!-- Huckbit Style from CDN -->    
+    <!--<link href="https://cdn.rawgit.com/huckbit/styles/master/dist/main.css" rel="stylesheet">-->
     <!-- Custom styles for this template -->
     <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
