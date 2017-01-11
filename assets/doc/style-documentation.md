@@ -471,8 +471,8 @@ work in progress ...
 
 <div id="draft" class="draft">
     <div class="draft__content">
-        <a id="closeDraft" class="link float--right" href="#">&#xf2d3;</a>
-        <h4>&#xf044; Draft</h4>
+        <a id="closeDraft" class="float--right" href="#"><i class="fa fa-times-rectangle"></i></a>
+        <h4><i class="fa fa-pencil-square-o"></i> Draft</h4>
         <p>This page is not complete.</p>
     </div>
 </div>

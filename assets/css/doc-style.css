@@ -97,3 +97,41 @@
   pre code {
     border: none;
   }
+
+
+/* BEM Elements */
+.float--right{
+  float: right;
+}
+
+
+  /* Draft Message*/
+.draft {
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  width: 250px;
+  height: 70px;
+  z-index: 100;
+  font-size: .9em;
+  background: #FFF4CC;
+  border-left: 5px solid #FFE070;
+  border-radius: 4px 0 0 4px;
+  transition: all 1s ease; }
+  @media (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+    .draft {
+      visibility: hidden;
+      pointer-events: none; } }
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .draft {
+      visibility: hidden;
+      pointer-events: none; } }
+  @media (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
+    .draft {
+      visibility: hidden;
+      pointer-events: none; } }
+  .draft__content {
+    padding: 0 15px; }
+  .draft--off {
+    right: -300px;
+    opacity: 0; }
