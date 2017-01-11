@@ -93,3 +93,7 @@
   .pre-white {
     background-color: #fff;
   }
+
+  pre code {
+    border: none;
+  }

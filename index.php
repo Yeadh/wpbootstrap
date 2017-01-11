@@ -1,4 +1,4 @@
-<?php get_header( ); ?>
+<?php get_header(); ?>
     <div class="row">
         <div class="col-sm-8 blog-main">
 
@@ -11,5 +11,6 @@
         <?php endif; ?>
 
         </div><!-- /.blog-main -->
-    
+        
+<?php get_sidebar(); ?>
 <?php get_footer( ) ?>
