@@ -14,7 +14,7 @@
         <?php is_front_page() ? bloginfo( 'description' ) : wp_title();?>
     </title>
     <!-- Bootstrap core CSS -->
-    <link href="<?php bloginfo('template_url');?>/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_url');?>/assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -108,7 +108,7 @@
     <?php wp_footer(); ?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="<?php bloginfo( 'template_url' ) ?>/js/bootstrap.min.js"></script>
+    <script src="<?php bloginfo( 'template_url' ) ?>/assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>

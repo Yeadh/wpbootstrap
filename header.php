@@ -13,9 +13,6 @@
         <?php bloginfo( 'name' ) ?> | 
         <?php is_front_page() ? bloginfo( 'description' ) : wp_title();?>
     </title>
-    <!-- Bootstrap core CSS -->
-    <link href="<?php bloginfo('template_url');?>/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php bloginfo('template_url');?>/assets/css/doc-style.css" rel="stylesheet">
     <!-- Huckbit Style from CDN -->    
     <!--<link href="https://cdn.rawgit.com/huckbit/styles/master/dist/main.css" rel="stylesheet">-->
     <!-- Custom styles for this template -->
