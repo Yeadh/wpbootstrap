@@ -369,6 +369,19 @@ h6, .h6 {
   color: var(--light-gray);
 }
 
+/*Quick add Fomr Styles*/
+.admin-quick-add {
+  background-color: var(--main-color);
+  padding: 15px;
+}
+
+.admin-quick-add h3{
+  color: var(--white);
+}
+.quick-add {
+  margin: 10px 0;
+}
+
 
 
 /* ----------------------------------------------------

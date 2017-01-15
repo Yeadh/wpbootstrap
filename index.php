@@ -1,6 +1,16 @@
 <?php get_header(); ?>
     <div class="row">
         <div class="col-sm-8 blog-main">
+        
+        <!-- Quick post if you are signed-in as Administrator -->
+        <?php if(current_user_can( 'administrator' )): ?>
+            <div class="admin-quick-add form-group">
+                <h3>Quick Add Post</h3>
+                <input type="text" class="form-control quick-add" name="title" placeholder="title">
+                <textarea name="content" class="form-control quick-add" rows="3" placeholder="Content"></textarea>
+                <button id="quick-add-button" class="btn btn-default">Create Post</button>
+            </div>
+        <?php endif; ?>
 
         <?php if(have_posts()): ?>
         <?php while ( have_posts() ) : the_post(); ?>

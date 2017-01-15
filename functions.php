@@ -88,3 +88,17 @@ add_action( 'wp_enqueue_scripts', 'wpb_enqueue' );
 
 
     //Customizer file
+
+
+
+/* Quick post magic data
+-------------------------------------------------------- */ 
+ function quick_post() {
+
+     wp_localize_script( 'wpb_main_js', 'quickPostData', array(
+         'nonce'    => wp_create_nonce( 'wp_rest' ),
+         'siteURL'  => get_site_url()
+     ));
+ }
+
+ add_action( 'wp_enqueue_scripts', 'quick_post' );
