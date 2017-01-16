@@ -36,11 +36,6 @@ body {
   color: var(--gray);
 }
 
-.hide{
-  visibility: hidden;
-  transition: visibility 5s linear;
-}
-
 a {
   color: var(--main-color);
 }
@@ -396,6 +391,10 @@ h6, .h6 {
   float: right;
   margin-top: 5px;
   cursor: pointer;
+}
+
+.fa-window-close--right:hover {
+  color: #E74C3C;
 }
 
 /* ----------------------------------------------------
