@@ -69,7 +69,7 @@ if (quickAddButton) {
                     closeMessage();
                 } else {
                     statusMessage.innerHTML = '';
-                    statusMessage.innerHTML = '<p class="bg-danger">ERROR - try again. <i class="fa fa-window-close fa-window-close--right" id="message-close"></i></p>';
+                    statusMessage.innerHTML = '<p class="bg-danger alert alert-danger">Oh snap! You got an error! <i class="fa fa-window-close fa-window-close--right" id="message-close"></i></p>';
                     closeMessage();
                 }
             }

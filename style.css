@@ -374,6 +374,7 @@ h6, .h6 {
 .admin-quick-add {
   background-color: var(--main-color);
   padding: 15px;
+  border-radius: 5px;
 }
 
 .admin-quick-add h3{
