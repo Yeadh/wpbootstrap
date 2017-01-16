@@ -44,6 +44,7 @@ function createHTML(postData){
 // Quick Add Post AJAX
 
 var quickAddButton = document.querySelector("#quick-add-button");
+var statusMessage = document.querySelector("#status-message");
 
 if (quickAddButton) {
     quickAddButton.addEventListener('click', function(){
@@ -61,14 +62,28 @@ if (quickAddButton) {
         createPost.onreadystatechange = function() {
             if(createPost.readyState == 4){
                 if(createPost.status == 201){
+                    statusMessage.innerHTML = '';
                     document.querySelector('.admin-quick-add [name="title"]').value = '';
                     document.querySelector('.admin-quick-add [name="content"]').value = '';
-                    alert('Post published - refresh your page.');       
+                    statusMessage.innerHTML = '<p class="bg-success text-success">Post created successfully. <i class="fa fa-window-close fa-window-close--right" id="message-close"></i></p>';
+                    closeMessage();
                 } else {
-                    alert('ERROR - try again.');
+                    statusMessage.innerHTML = '';
+                    statusMessage.innerHTML = '<p class="bg-danger">ERROR - try again. <i class="fa fa-window-close fa-window-close--right" id="message-close"></i></p>';
+                    closeMessage();
                 }
             }
         }
 
+    });
+}
+
+
+function closeMessage(){
+    var closeMessage = document.querySelector("#message-close");
+    statusMessage.classList.remove("hide");//for previous errors
+    closeMessage.addEventListener("click", function(){
+        console.log("clicked");
+        statusMessage.classList.add("hide");
     });
 }

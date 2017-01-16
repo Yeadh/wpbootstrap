@@ -36,6 +36,11 @@ body {
   color: var(--gray);
 }
 
+.hide{
+  visibility: hidden;
+  transition: visibility 5s linear;
+}
+
 a {
   color: var(--main-color);
 }
@@ -370,6 +375,7 @@ h6, .h6 {
 }
 
 /*Quick add Fomr Styles*/
+
 .admin-quick-add {
   background-color: var(--main-color);
   padding: 15px;
@@ -382,7 +388,15 @@ h6, .h6 {
   margin: 10px 0;
 }
 
-
+.bg-danger,
+.bg-success {
+  padding: 10px;
+}
+.fa-window-close--right {
+  float: right;
+  margin-top: 5px;
+  cursor: pointer;
+}
 
 /* ----------------------------------------------------
     Mobile Style
