@@ -95,6 +95,23 @@
            </div>
        </div>
    </section>
+   <section class="callout">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-10 col-md-push-1 callout-div">
+                   <div class="media">
+                        <div class="media-left">
+                            <a href="#"><img class="media-object" src="http://placekitten.com/g/300/200" alt=""></a>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading"><?php echo get_theme_mod('head_title', 'Insert head title here'); ?></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vel.</p>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </div>
+   </section>
 
 <footer class="blog-footer">
         <p>&copy; <?php echo Date('Y'); ?> - <?php bloginfo( 'name' ) ?> | <?php bloginfo( 'description' ) ?><p>
