@@ -154,13 +154,25 @@
         
         //Head title
         $wp_customize->add_setting('head_title', array(
-            'default'   => 'Insert head title here',
+            'default'   => 'Insert callout title here',
             'priority'  => 3
         ));
         $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'head_title_control', array(
             'label'     => __('Title', 'wpbootstrap'),
             'section'   => 'callouts',
             'settings'  => 'head_title'
+        )));
+        
+        //Head text
+        $wp_customize->add_setting('head_text', array(
+            'default'   => 'Insert text for callout here',
+            'priority'  => 4
+        ));
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'head_text_control', array(
+            'label'     => __('Text', 'wpbootstrap'),
+            'section'   => 'callouts',
+            'settings'  => 'head_text',
+            'type'      => 'textarea'
         )));
     }
 

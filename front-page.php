@@ -106,7 +106,7 @@
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading"><?php echo get_theme_mod('head_title', 'Insert head title here'); ?></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vel.</p>
+                            <p><?php echo get_theme_mod('head_text', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, repellat.'); ?></p>
                         </div>
                     </div>
                </div>
