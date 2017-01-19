@@ -102,3 +102,17 @@ add_action( 'wp_enqueue_scripts', 'wpb_enqueue' );
  }
 
  add_action( 'wp_enqueue_scripts', 'quick_post' );
+
+ /* Custom metabox
+ -------------------------------------------------------- */ 
+ function wpb_add_custom_metabox() {
+     add_meta_box( 'release_url', 'Release URL', 'wpb_release_callback', 'post', 'side', 'high' );
+ }
+
+ add_action( 'add_meta_boxes', 'wpb_add_custom_metabox' );
+
+ function wpb_release_callback(){
+     $releaseURL = '<p>GitHub Release URL:</p>';
+     $releaseURL.= '<input type="url" placeholder="insert URL">';
+     echo $releaseURL;
+ }
