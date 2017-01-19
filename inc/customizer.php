@@ -13,7 +13,7 @@
             'default'   => 'No',
         ));
         $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'quick_post_control', array(
-            'label'     => __('Display Quick Post section?', 'wpbootstrap'),
+            'label'     => __('Display Blog Quick Post section?', 'wpbootstrap'),
             'section'   => 'admin_option',
             'settings'  => 'quick_post',
             'type'      => 'select',

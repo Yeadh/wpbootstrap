@@ -27,8 +27,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --gray: #555;
   --dark-gray: #333;
   --white: #fff;
-  --font1: 'Source Sans Pro','fontAwesome', sans-serif;
-  --font2: 'Lemonada', sans-serif;
+  --font1: 'Source Sans Pro', FontAwesome, sans-serif;
+  --font2: 'Lemonada', FontAwesome, sans-serif;
 }
 
 body {
@@ -51,7 +51,6 @@ h6, .h6 {
   font-weight: bold;
   color: var(--dark-gray);
 }
-
 
 /*
  * Override Bootstrap's default container.
@@ -261,6 +260,7 @@ h6, .h6 {
 .box {
   padding: 15px;
   border: var(--light-gray) 1px solid;
+  margin-bottom: 10px;
 }
 
 .box .fa {
