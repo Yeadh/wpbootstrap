@@ -1,8 +1,27 @@
 <?php
-    function wpb_customizer_register($wp_customize){
 
-        /* Showcase Section
-        -------------------------------------------------------- */ 
+    function wpb_customizer_register($wp_customize){
+    /* Admin Option Panel
+    -------------------------------------------------------- */
+     $wp_customize->add_section('admin_option', array(
+            'title'         => __('Admin Options Panel', 'wpbootstrap'),
+            'description'   => sprintf(__('Options for Admin', 'wpbootstrap')),
+            'priority'      => 110
+        ));
+    //display section?
+        $wp_customize->add_setting('quick_post', array(
+            'default'   => 'No',
+        ));
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'quick_post_control', array(
+            'label'     => __('Display Quick Post section?', 'wpbootstrap'),
+            'section'   => 'admin_option',
+            'settings'  => 'quick_post',
+            'type'      => 'select',
+            'choices'   => array('No' => 'No', 'Yes' => 'Yes')
+        )));
+
+    /* Showcase Section
+    -------------------------------------------------------- */ 
         $wp_customize->add_section('showcase', array(
             'title'         => __('Showcase', 'wpbootstrap'),
             'description'   => sprintf(__('Options for showcase', 'wpbootstrap')),
@@ -70,8 +89,8 @@
             'priority'  => 5
         ));
 
-        /* Social Networks Section
-        -------------------------------------------------------- */ 
+    /* Social Networks Section
+    -------------------------------------------------------- */ 
         $wp_customize->add_section('social', array(
             'title'         =>__('Social Networks', 'wpbootstrap'),
             'description'   => sprintf(__('Social network profiles','wpbootstrap')),
@@ -101,8 +120,8 @@
             'priority'  => 2
         ));
 
-        /* Site Colors
-        -------------------------------------------------------- */
+    /* Site Colors
+    -------------------------------------------------------- */
         $wp_customize->add_section('colors', array(
             'title'         =>__('Site Colors', 'wpbootstrap'),
             'priority'      => 120
@@ -119,8 +138,8 @@
             'settings'  => 'main_color'
         )));
 
-        /* HomePage Callout
-        -------------------------------------------------------- */ 
+    /* HomePage Callout
+    -------------------------------------------------------- */ 
         $wp_customize->add_section('callouts', array(
             'title'     => __('Footer Callout', 'wpbootstrap'),
             'priority'  => 140
@@ -177,4 +196,4 @@
     }
 
     
-    add_action( 'customize_register', 'wpb_customizer_register' );
+add_action( 'customize_register', 'wpb_customizer_register' );
