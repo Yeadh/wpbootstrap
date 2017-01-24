@@ -77,24 +77,31 @@
    <section class="boxes">
        <div class="container">
            <div class="row">
-                <div class="col-md-4">
-                    <?php if(is_active_sidebar('box1')) : ?>
-                        <?php dynamic_sidebar( 'box1' ) ?>
-                    <?php endif; ?>
+               <div class="col-md-1"><!-- white column space --></div>
+                <div class="col-md-3 box">
+                    <p class="text-center"><i class="fa <?php echo get_theme_mod('icon_code_box_1', 'fa-user'); ?>"></i></p>
+                    <h1><?php echo get_theme_mod('title_box_1', 'Box one'); ?></h1>
+                    <p><?php echo get_theme_mod('text_box_1', 'Lorem ipsum dolor sit amet.'); ?></p>
+                    <a class="btn btn-primary" href="<?php echo get_page_link(get_theme_mod('buttonURL_box_1', '#')); ?>">
+                    <?php echo get_theme_mod('button_text_box_1', 'Go to page'); ?></a>
                 </div>
-                <div class="col-md-4">
-                    <?php if(is_active_sidebar('box2')) : ?>
-                        <?php dynamic_sidebar( 'box2' ) ?>
-                    <?php endif; ?>
+                <div class="col-md-3 box">
+                    <p class="text-center"><i class="fa <?php echo get_theme_mod('icon_code_box_2', 'fa-calendar-o') ?>"></i></p>
+                    <h1><?php echo get_theme_mod('title_box_2', 'Box Two'); ?></h1>
+                    <p><?php echo get_theme_mod('text_box_2', 'Lorem ipsum dolor sit amet.'); ?></p>
+                    <a class="btn btn-primary" href="<?php echo get_page_link( get_theme_mod('buttonURL_box_2') ); ?>">
+                    <?php echo get_theme_mod('button_text_box_2', 'Go to page'); ?></a>
                 </div>
-                <div class="col-md-4">
-                    <?php if(is_active_sidebar('box3')) : ?>
-                        <?php dynamic_sidebar( 'box3' ) ?>
-                    <?php endif; ?>
+                <div class="col-md-3 box">
+                    <p class="text-center"><i class="fa <?php echo get_theme_mod('icon_code_box_3', 'fa-pie-chart') ?>"></i></p>
+                    <h1><?php echo get_theme_mod('title_box_3', 'Box Three'); ?></h1>
+                    <p><?php echo get_theme_mod('text_box_3', 'Lorem ipsum dolor sit amet.'); ?></p>
+                    <a class="btn btn-primary" href="<?php echo get_page_link( get_theme_mod('buttonURL_box_3') ); ?>">
+                    <?php echo get_theme_mod('button_text_box_3', 'Go to page'); ?></a>
                 </div>
+                
            </div>
        </div>
-   </section>
    <?php if(get_theme_mod( 'head_display' ) == 'Yes'): ?>
    <section class="callout">
        <div class="container">

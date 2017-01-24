@@ -260,7 +260,7 @@ h6, .h6 {
 .box {
   padding: 15px;
   border: var(--light-gray) 1px solid;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .box .fa {
