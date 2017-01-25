@@ -2,9 +2,18 @@
 
 //set up
 
-//Includes
-include (get_template_directory().'/inc/front/enqueue.php');
-require get_template_directory(). '/inc/customizer.php';
+/* Includes 
+-------------------------------------------------------- */ 
+    // general includes
+    require get_template_directory().'/inc/front/enqueue.php';
+
+    // customizer require
+    require get_template_directory().'/inc/customizer/admin-panel.php';
+    require get_template_directory().'/inc/customizer/boxes.php';
+    require get_template_directory().'/inc/customizer/showcase.php';
+    require get_template_directory().'/inc/customizer/social-networks.php';
+    require get_template_directory().'/inc/customizer/style.php';
+    require get_template_directory().'/inc/customizer/footer-callout.php';
 
 //Action & Filter Hooks
 add_action( 'wp_enqueue_scripts', 'wpb_enqueue' );
