@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes( );
-?>>
+<html <?php language_attributes();?>>
 <head>
     <meta charset="<?php bloginfo( 'charset' )?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +45,7 @@
                      wp_nav_menu( array(
                         'menu'              => 'primary',
                         'theme_location'    => 'primary',
-                        'depth'             => 2,
+                        'depth'             =>  2,
                         'container'         => 'div',
                         'container_class'   => 'collapse navbar-collapse',
                         'container_id'      => 'bs-example-navbar-collapse-1',
@@ -77,31 +76,32 @@
    <section class="boxes">
        <div class="container">
            <div class="row">
-               <div class="col-md-1"><!-- white column space --></div>
+               <div class="col-md-1 center-boxes"><!-- white column space --></div>
                 <div class="col-md-3 box">
                     <p class="text-center"><i class="fa <?php echo get_theme_mod('icon_code_box_1', 'fa-user'); ?>"></i></p>
-                    <h1><?php echo get_theme_mod('title_box_1', 'Box one'); ?></h1>
+                    <h2><?php echo get_theme_mod('title_box_1', 'Box One'); ?></h2>
                     <p><?php echo get_theme_mod('text_box_1', 'Lorem ipsum dolor sit amet.'); ?></p>
                     <a class="btn btn-primary" href="<?php echo get_page_link(get_theme_mod('buttonURL_box_1', '#')); ?>">
                     <?php echo get_theme_mod('button_text_box_1', 'Go to page'); ?></a>
                 </div>
                 <div class="col-md-3 box">
                     <p class="text-center"><i class="fa <?php echo get_theme_mod('icon_code_box_2', 'fa-calendar-o') ?>"></i></p>
-                    <h1><?php echo get_theme_mod('title_box_2', 'Box Two'); ?></h1>
+                    <h2><?php echo get_theme_mod('title_box_2', 'Box Two'); ?></h2>
                     <p><?php echo get_theme_mod('text_box_2', 'Lorem ipsum dolor sit amet.'); ?></p>
                     <a class="btn btn-primary" href="<?php echo get_page_link( get_theme_mod('buttonURL_box_2') ); ?>">
                     <?php echo get_theme_mod('button_text_box_2', 'Go to page'); ?></a>
                 </div>
                 <div class="col-md-3 box">
                     <p class="text-center"><i class="fa <?php echo get_theme_mod('icon_code_box_3', 'fa-pie-chart') ?>"></i></p>
-                    <h1><?php echo get_theme_mod('title_box_3', 'Box Three'); ?></h1>
+                    <h2><?php echo get_theme_mod('title_box_3', 'Box Three'); ?></h2>
                     <p><?php echo get_theme_mod('text_box_3', 'Lorem ipsum dolor sit amet.'); ?></p>
                     <a class="btn btn-primary" href="<?php echo get_page_link( get_theme_mod('buttonURL_box_3') ); ?>">
                     <?php echo get_theme_mod('button_text_box_3', 'Go to page'); ?></a>
                 </div>
-                
-           </div>
-       </div>
+           </div><!-- ./row -->
+       </div><!-- ./container -->
+    </section><!-- ./boxes -->
+
    <?php if(get_theme_mod( 'head_display' ) == 'Yes'): ?>
    <section class="callout">
        <div class="container">
@@ -115,10 +115,10 @@
                             <h3 class="media-heading"><?php echo get_theme_mod('head_title', 'Insert head title here'); ?></h3>
                             <p><?php echo get_theme_mod('head_text', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, repellat.'); ?></p>
                         </div>
-                    </div>
-               </div>
-           </div>
-       </div>
+                    </div><!-- ./media -->
+               </div><!-- col-md-10 col-md-push-1 callout-div -->
+           </div><!-- ./row -->
+       </div><!-- ./container -->
    </section>
    <?php endif; ?>
 
@@ -132,9 +132,6 @@
         <div class="text-right back-top"><a href="#">Back to top ^ </i></a></div>
     </footer>
     <?php wp_footer(); ?>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="<?php bloginfo( 'template_url' ) ?>/assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>

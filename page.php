@@ -16,8 +16,8 @@
         <?php else : ?>
             <p><?php __('No Page Found'); ?></p>
         <?php endif; ?>
-
-    </div><!-- /.blog-main -->
+        
+    </div> <!-- ./row -->
 
 <?php get_sidebar(); ?>   
 <?php get_footer( ) ?>

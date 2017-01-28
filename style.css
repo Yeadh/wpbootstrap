@@ -275,6 +275,10 @@ h6, .h6 {
   margin-bottom: 8px;
 }
 
+.center-boxes {
+  width: 9.333333%;
+}
+
 
 /* Comment section */
 .comments {
@@ -356,6 +360,7 @@ h6, .h6 {
   font-size: 1.3em;
   overflow: hidden;
 }
+
 @media (max-width: 767px) {
   .social-nav {
     display: none;
