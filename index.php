@@ -22,7 +22,12 @@
         <?php else : ?>
             <p><?php __('No Posts Found'); ?></p>
         <?php endif; ?>
-
+        <div class="pager">
+            <ul class="list-unstyled text-center">
+                <li class=""><?php previous_posts_link('<<'); ?></li> 
+                <li><?php next_posts_link('>>'); ?></li>
+            </ul>
+        </div>
         </div><!-- /.blog-main -->
         
 <?php get_sidebar(); ?>
