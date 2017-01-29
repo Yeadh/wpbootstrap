@@ -21,6 +21,11 @@
 
     <?php if(is_single( )): ?>
         <?php the_content(); ?>
+         <!-- support for user that use nextpage inside posts  -->
+                <?php wp_link_pages(array(
+                    'before'           => '<p class="text-center">' . __( 'Pages:' ),
+                    'after'            => '</p>',
+                )); ?> 
     <?php else : ?>
         <?php the_excerpt(); ?>
     <?php endif; ?>

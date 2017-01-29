@@ -9,8 +9,8 @@
                     <?php the_title(); ?>
                 </h2>
                 <?php the_content(); ?>
-            </div>
-            <!-- /.blog-post -->
+
+            </div><!-- /.blog-post -->
 
         <?php endwhile; ?>
         <?php else : ?>
