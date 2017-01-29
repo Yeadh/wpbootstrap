@@ -22,10 +22,10 @@
         <?php else : ?>
             <p><?php __('No Posts Found'); ?></p>
         <?php endif; ?>
-        <div class="pager">
-            <ul class="list-unstyled text-center">
-                <li class=""><?php previous_posts_link('<<'); ?></li> 
-                <li><?php next_posts_link('>>'); ?></li>
+        <div class="blog-pager">
+            <ul class="list-unstyled list-inline text-center">
+                <li class="blog-pager-chevron"><?php previous_posts_link('<i class="fa fa-chevron-left"></i>'); ?></li> 
+                <li class="blog-pager-chevron"><?php next_posts_link('<i class="fa fa-chevron-right"></i>'); ?></li>
             </ul>
         </div>
         </div><!-- /.blog-main -->

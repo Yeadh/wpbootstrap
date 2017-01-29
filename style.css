@@ -186,7 +186,6 @@ h6, .h6 {
   border-radius: 30px;
 }
 
-
 /*
  * Blog posts
  */
@@ -415,6 +414,24 @@ h6, .h6 {
   padding: 12px;
   margin: 10px 0 20px 0;
 }
+
+/*Blog pagination*/
+.blog-pager-chevron {
+  background-color: var(--main-color);
+  margin: 2px;
+  margin-bottom: 50px;
+  color: var(--white);
+  transition: all 5ms ease-in-out;
+}
+.blog-pager-chevron a {
+  color: var(--white);
+  padding: 0 7px !important;
+}
+.blog-pager-chevron:hover {
+  background-color: var(--dark-gray);
+  transform: scale(1.1);
+}
+
 
 /* ----------------------------------------------------
     Mobile Style
