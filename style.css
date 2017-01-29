@@ -23,6 +23,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 :root {
   /*--main-color: #428bca;*/ 
+  --dark-blue: #34495E;
   --light-gray: #ccc;
   --gray: #555;
   --dark-gray: #333;
@@ -287,7 +288,6 @@ h6, .h6 {
 
 /* Comment section */
 .comments {
-  border: 1px solid var(--light-gray);
   padding: 10px;
   margin-bottom: 20px;
   margin-top: 10px;
@@ -296,13 +296,22 @@ h6, .h6 {
 .comments li {
   list-style-type: none;
 }
+.comments a {
+  list-style-type: none;
+}
 
-.comments h3, .comments h2 {
-  background: var(--main-color);
-  color: #fff;
+.comments h3 {
   padding: 5px;
 }
 
+input[type="submit"]{
+  background-color: var(--main-color);
+  color: var(--white);
+  border: transparent;
+}
+input[type="submit"]:hover{
+  background-color:var(--dark-blue);
+}
 .comment-body {
   border: #ccc solid 1px;
   margin-bottom: 10px;
@@ -335,7 +344,6 @@ h6, .h6 {
 .comment-form input, .comment-form textarea {
   width: 100%;
   padding: 4px;
-  border: 1px solid var(--light-gray);
   margin-bottom: 15px;
 }
 
