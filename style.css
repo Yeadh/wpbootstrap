@@ -384,7 +384,7 @@ input[type="submit"]:hover{
   color: var(--white);
 }
 .social-nav a:hover {
-  color: var(--light-gray);
+  color: var(--dark-blue);
 }
 
 /*Quick add Fomr Styles*/
