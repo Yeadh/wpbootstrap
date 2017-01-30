@@ -17,7 +17,7 @@ function wpb_customizer_navbar($wp_customize) {
             'label'     => __('Upload your logo', 'wpbootstrap'),
             'section'   => 'navbar_brand',
             'settings'  => 'brand_image',
-            'height'    => 40
+            'height'    => 300
         )));
 }
 
