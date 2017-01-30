@@ -22,6 +22,8 @@
     <style>
         :root{
             --main-color: <?php echo get_theme_mod('main_color', '#428bca'); ?> ;
+            --link-color: <?php echo get_theme_mod('link_color', '#428bca'); ?> ;
+            --link-color-hover: <?php echo get_theme_mod('link_color_hover', '#23527C'); ?> ;
         }
     </style>
 </head>
