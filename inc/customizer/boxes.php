@@ -79,7 +79,7 @@
 
     //Fontawesome code
     $wp_customize->add_setting('icon_code_box_2', array(
-        'default'   => sprintf(__('fa-camera-retro', 'wpbootstrap'))
+        'default'   => sprintf(__('fa-calendar-o', 'wpbootstrap'))
     ));
     
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'icon_code_box_2_control', array(
@@ -141,7 +141,7 @@
 
     //Fontawesome code
     $wp_customize->add_setting('icon_code_box_3', array(
-        'default'   => sprintf(__('fa-camera-retro', 'wpbootstrap'))
+        'default'   => sprintf(__('fa-pie-chart', 'wpbootstrap'))
     ));
     
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'icon_code_box_3_control', array(
