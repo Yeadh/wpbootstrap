@@ -7,8 +7,9 @@ function wpb_customizer_register_admin_panel($wp_customize){
      $wp_customize->add_section('admin_option', array(
             'title'         => __('Admin Options Panel', 'wpbootstrap'),
             'description'   => sprintf(__('Options for Admin', 'wpbootstrap')),
-            'priority'      => 110
+            'priority'      => 160
         ));
+    
     //display section?
         $wp_customize->add_setting('quick_post', array(
             'default'   => 'No',

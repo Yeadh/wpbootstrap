@@ -22,6 +22,8 @@
 
         :root{
             --main-color: <?php echo get_theme_mod('main_color', '#428bca'); ?> ;
+            --link-color: <?php echo get_theme_mod('link_color', '#428bca'); ?> ;
+            --link-color-hover: <?php echo get_theme_mod('link_color_hover', '#23527C'); ?> ;
         }
 
         .showcase {
@@ -41,6 +43,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                  </button>
+                <a class="navbar-brand" href="<?php echo home_url(); ?>"><img alt="brand" src="<?php echo get_theme_mod('navbar_brand',get_bloginfo('template_url').'/img/brand.png' ) ?>"></a>
+
                 <?php
                      wp_nav_menu( array(
                         'menu'              => 'primary',

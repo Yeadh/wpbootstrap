@@ -237,6 +237,17 @@ h6, .h6 {
     max-height: 100%;
   }
 }
+.navbar-brand img {
+  max-height: 30px;
+}
+.blog-nav a {
+  transition: all 5ms ease-in-out;
+}
+
+.blog-nav a:hover {
+  background-color: transparent;
+  transform: scaleX(1.1);
+}
 
 /* Showcase */
 .showcase{

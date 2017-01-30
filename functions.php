@@ -12,12 +12,14 @@
     require get_template_directory().'/inc/front/excerpt.php';
 
 // includes for customizer
-    require get_template_directory().'/inc/customizer/admin-panel.php';
     require get_template_directory().'/inc/customizer/boxes.php';
     require get_template_directory().'/inc/customizer/showcase.php';
     require get_template_directory().'/inc/customizer/social-networks.php';
     require get_template_directory().'/inc/customizer/style.php';
     require get_template_directory().'/inc/customizer/footer-callout.php';
+    require get_template_directory().'/inc/customizer/navbar.php';
+    require get_template_directory().'/inc/customizer/admin-panel.php';
+
 
 //third part includes
     require('wp_bootstrap_navwalker.php');//Register Nav Walker class_alias

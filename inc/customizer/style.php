@@ -6,7 +6,7 @@ function wpb_customizer_register_style($wp_customize){
     -------------------------------------------------------- */
         $wp_customize->add_section('style', array(
             'title'         =>__('Site Colors', 'wpbootstrap'),
-            'priority'      => 120
+            'priority'      => 125
         ));
 
         //main color
