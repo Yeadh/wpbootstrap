@@ -10,6 +10,7 @@
     require get_template_directory().'/inc/widgets.php';
     require get_template_directory().'/inc/front/enqueue.php';
     require get_template_directory().'/inc/front/excerpt.php';
+    require get_template_directory().'/inc/front/custom-logo.php';
 
 // includes for customizer
     require get_template_directory().'/inc/customizer/boxes.php';
@@ -17,7 +18,6 @@
     require get_template_directory().'/inc/customizer/social-networks.php';
     require get_template_directory().'/inc/customizer/style.php';
     require get_template_directory().'/inc/customizer/footer-callout.php';
-    require get_template_directory().'/inc/customizer/navbar.php';
     require get_template_directory().'/inc/customizer/admin-panel.php';
 
 
@@ -28,6 +28,8 @@
     add_action( 'wp_enqueue_scripts', 'wpb_enqueue' );
     add_action( 'after_setup_theme', 'wpb_setup_theme' );
     add_action('widgets_init', 'wpb_init_widgets');
+    add_action( 'after_setup_theme', 'custom_logo_setup' );
+
 
     add_filter( 'excerpt_length', 'wpb_set_excerpt_lenght' );
  
@@ -38,8 +40,6 @@
     
 //widget Location
     
-
-
 
 
 /* Quick post magic data
