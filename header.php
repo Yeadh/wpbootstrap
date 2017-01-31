@@ -37,7 +37,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                  </button>
-                <a class="navbar-brand" href="<?php echo home_url(); ?>"><?php the_custom_logo();?></a>
+                 <?php if(function_exists('the_custom_logo')) : ?>
+                    <a class="custom-logo" href="<?php echo home_url(); ?>"><?php the_custom_logo();?></a>
+                <?php endif; ?>
 
                 <?php
                      wp_nav_menu( array(

@@ -45,6 +45,7 @@ a:hover {
   color: var(--link-color-hover);
 }
 
+
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -225,7 +226,7 @@ h6, .h6 {
 
 
 /* ----------------------------------------------------
-    Custom Style
+    Custom Style after nav theme
    ---------------------------------------------------- */
 
 /* Custom container for nav */
@@ -238,15 +239,20 @@ h6, .h6 {
   }
 }
 
+/*style for custom-logo*/
 .blog-nav a {
   float: left;
-  padding-top: 10px;
+  padding-top: 7px;
   margin-right: 5px;
   transition: all 5ms ease-in-out;
 }
-
 .blog-nav a:hover {
   background-color: transparent;
+}
+
+.custom-logo-link img {
+  width: 36px;
+  height: 36px;
 }
 
 /* Showcase */
@@ -433,7 +439,7 @@ input[type="submit"]:hover{
 
 /*Callout mainpage*/
 .callout-div{
-  background-color: var(--light-gray);
+  background-color: var(--footer-callout-color);
   padding: 12px;
   margin: 10px 0 20px 0;
 }

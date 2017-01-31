@@ -24,6 +24,7 @@
             --main-color: <?php echo get_theme_mod('main_color', '#428bca'); ?> ;
             --link-color: <?php echo get_theme_mod('link_color', '#428bca'); ?> ;
             --link-color-hover: <?php echo get_theme_mod('link_color_hover', '#23527C'); ?> ;
+            --footer-callout-color: <?php echo get_theme_mod('callout_box_color', '#B1D7F1'); ?> ;
         }
 
         .showcase {
@@ -43,7 +44,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                  </button>
-                <a class="navbar-brand" href="<?php echo home_url(); ?>"><?php the_custom_logo();?></a>
+                 <?php if(function_exists('the_custom_logo')) : ?>
+                    <a class="custom-logo" href="<?php echo home_url(); ?>"><?php the_custom_logo();?></a>
+                <?php endif; ?>
 
                 <?php
                      wp_nav_menu( array(
