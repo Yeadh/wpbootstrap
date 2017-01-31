@@ -240,17 +240,10 @@ h6, .h6 {
 }
 
 /*style for custom-logo*/
-.blog-nav a {
-  float: left;
-  padding-top: 7px;
-  margin-right: 5px;
-  transition: all 5ms ease-in-out;
-}
-.blog-nav a:hover {
-  background-color: transparent;
-}
-
 .custom-logo-link img {
+  float: left;
+  margin-top: 7px;
+  margin-right: 5px;
   width: 36px;
   height: 36px;
 }
