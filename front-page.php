@@ -110,19 +110,16 @@
     </section><!-- ./boxes -->
 
    <?php if(get_theme_mod( 'head_display' ) == 'Yes'): ?>
+   
    <section class="callout">
        <div class="container">
            <div class="row">
                <div class="col-md-10 col-md-push-1 callout-div">
-                   <div class="media">
-                        <div class="media-left">
-                            <a href="#"><img class="media-object" src="<?php echo wp_get_attachment_url(get_theme_mod( 'load_callout_image')); ?>" alt=""></a>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading"><?php echo get_theme_mod('head_title', 'Insert head title here'); ?></h3>
-                            <p><?php echo get_theme_mod('head_text', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, repellat.'); ?></p>
-                        </div>
-                    </div><!-- ./media -->
+               <div class="media-object">
+                    <img class="media-object-img img-responsive" src="<?php echo wp_get_attachment_url(get_theme_mod( 'load_callout_image')); ?>" alt="">
+                    <h3 class="media-object-heading"><?php echo get_theme_mod('head_title', 'Insert head title here'); ?></h3>
+                    <p class="media-object-article"><?php echo get_theme_mod('head_text', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, repellat.'); ?></p>
+                </div><!-- ./media-object -->
                </div><!-- col-md-10 col-md-push-1 callout-div -->
            </div><!-- ./row -->
        </div><!-- ./container -->

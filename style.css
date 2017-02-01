@@ -433,8 +433,25 @@ input[type="submit"]:hover{
 /*Callout mainpage*/
 .callout-div{
   background-color: var(--footer-callout-color);
-  padding: 12px;
+  padding: 7px 0 0  0;
   margin: 10px 0 20px 0;
+}
+
+.media-object {
+  overflow: hidden;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+}
+.media-object-img {
+  float: left;
+  margin: 0 22px 0px 0;
+  border: 1px solid var(--light-gray);
+}
+.media-object-heading {
+  margin: 0 0 0.5rem 0;
+}
+.media-object-article {
+  margin-right: 10px; 
 }
 
 /*Blog pagination*/
