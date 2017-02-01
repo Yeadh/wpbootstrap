@@ -25,12 +25,13 @@
     require('wp_bootstrap_navwalker.php');//Register Nav Walker class_alias
 
 //Action & Filter Hooks
+    // Actions
     add_action( 'wp_enqueue_scripts', 'wpb_enqueue' );
     add_action( 'after_setup_theme', 'wpb_setup_theme' );
     add_action( 'widgets_init', 'wpb_init_widgets');
     add_action( 'after_setup_theme', 'custom_logo_setup' );
 
-
+    // Filters
     add_filter( 'excerpt_length', 'wpb_set_excerpt_lenght' );
  
 
