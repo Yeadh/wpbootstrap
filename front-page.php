@@ -109,6 +109,28 @@
        </div><!-- ./container -->
     </section><!-- ./boxes -->
 
+
+    <section class="latest-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <?php query_posts( array(
+                        'category_name' => 'news',
+                        'posts_per_page' => 3,
+                    )); ?>
+                    <?php if(have_posts()): while ( have_posts() ) : the_post(); ?>
+                    <div class="col-md-4">
+                        <?php the_excerpt(); ?>
+                    </div><!-- ./col-md-3 -->
+                        <?php endwhile; ?>
+                    <?php else : ?>
+                        <p><?php __('No latest News Found'); ?></p>
+                    <?php endif; ?>
+                </div><!-- ./col-md-12 -->
+            </div><!-- ./row -->
+        </div><!-- ./container -->
+    </section><!-- .latest-news -->
+
    <?php if(get_theme_mod( 'head_display' ) == 'Yes'): ?>
    
    <section class="callout">
