@@ -120,7 +120,12 @@
                     )); ?>
                     <?php if(have_posts()): while ( have_posts() ) : the_post(); ?>
                     <div class="col-md-4">
-                        <?php the_excerpt(); ?>
+                        <?php if(has_post_thumbnail( )): ?>
+                            <div class="post-thumb-news">
+                                <?php the_post_thumbnail('news-thumb'); ?>
+                            </div><!-- ./post-thumb-news -->
+                        <?php endif; ?>
+                        <?php the_excerpt() ?>
                     </div><!-- ./col-md-3 -->
                         <?php endwhile; ?>
                     <?php else : ?>

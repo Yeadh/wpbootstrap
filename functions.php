@@ -27,7 +27,7 @@
 //Action & Filter Hooks
     add_action( 'wp_enqueue_scripts', 'wpb_enqueue' );
     add_action( 'after_setup_theme', 'wpb_setup_theme' );
-    add_action('widgets_init', 'wpb_init_widgets');
+    add_action( 'widgets_init', 'wpb_init_widgets');
     add_action( 'after_setup_theme', 'custom_logo_setup' );
 
 
