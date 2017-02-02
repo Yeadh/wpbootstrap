@@ -12,11 +12,6 @@
         <?php bloginfo( 'name' ) ?> | 
         <?php is_front_page() ? bloginfo( 'description' ) : wp_title();?>
     </title>
-    <!-- Bootstrap core CSS -->
-    <link href="<?php bloginfo('template_url');?>/assets/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <?php wp_head();?> <!-- you need this if you want use a third part plugin for example -->
     <style>
 
@@ -122,11 +117,14 @@
                     <div class="col-md-4">
                         <?php if(has_post_thumbnail( )): ?>
                             <div class="post-thumb-news">
-                                <?php the_post_thumbnail('news-thumb'); ?>
+                                <?php the_post_thumbnail('news-thumb'); ?> <!-- call specific thumb format in setup -->
                             </div><!-- ./post-thumb-news -->
                         <?php endif; ?>
-                        <?php the_excerpt() ?>
-                    </div><!-- ./col-md-3 -->
+                        <div class="latest-new-article">
+                            <h3 class=""><?php the_title(); ?></h3>
+                            <?php the_excerpt(); ?>
+                        </div>
+                        </div><!-- ./col-md-3 -->
                         <?php endwhile; ?>
                     <?php else : ?>
                         <p><?php __('No latest News Found'); ?></p>

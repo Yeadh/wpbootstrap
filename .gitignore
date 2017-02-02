@@ -66,6 +66,8 @@ HTML/
 .Trashes
 ehthumbs.db
 Thumbs.db
+.prepros.cfg
+
 
 # Build Systems #
 ######################
