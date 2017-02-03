@@ -32,20 +32,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --font2: 'Lemonada', FontAwesome, sans-serif;
 }
 
-body {
-  font-family: var(--font1);
-  color: var(--gray);
-}
-
-a {
-  color: var(--link-color);
-}
-
-a:hover {
-  color: var(--link-color-hover);
-}
-
-
 h1, .h1,
 h2, .h2,
 h3, .h3,
