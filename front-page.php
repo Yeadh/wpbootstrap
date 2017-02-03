@@ -133,8 +133,7 @@
                         <?php wp_reset_postdata(); ?>
                             <?php else : ?>
                                 <p><?php __('No latest News Found'); ?></p>
-                    <?php endif; ?>
-                  
+                    <?php endif; ?>  
                 </div><!-- ./col-md-12 -->
             </div><!-- ./row -->
         </div><!-- ./container -->
