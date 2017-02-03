@@ -109,26 +109,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <?php query_posts( array(
-                        'category_name' => 'news',
-                        'posts_per_page' => 3,
-                    )); ?>
-                    <?php if(have_posts()): while ( have_posts() ) : the_post(); ?>
-                    <div class="col-md-4">
-                        <?php if(has_post_thumbnail( )): ?>
-                            <div class="post-thumb-news">
-                                <?php the_post_thumbnail('news-thumb'); ?> <!-- call specific thumb format in setup -->
-                            </div><!-- ./post-thumb-news -->
-                        <?php endif; ?>
-                        <div class="latest-new-article">
-                            <h3 class=""><?php the_title(); ?></h3>
-                            <?php the_excerpt(); ?>
-                        </div>
-                        </div><!-- ./col-md-3 -->
+                    <?php 
+                        // the query
+                        $the_query = new WP_Query( array(
+                            'category_name' => 'news',
+                            'posts_per_page' => 3,
+                        ) ); 
+                    ?>
+                    <?php if ( $the_query->have_posts() ) : ?>
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                            <div class="col-md-4">
+                                <?php if(has_post_thumbnail( )): ?>
+                                    <div class="post-thumb-news">
+                                        <?php the_post_thumbnail('news-thumb'); ?> <!-- call specific thumb format in setup -->
+                                    </div><!-- ./post-thumb-news -->
+                                <?php endif; ?>
+                                <div class="latest-new-article">
+                                    <h3 class=""><?php the_title(); ?></h3>
+                                        <?php the_excerpt(); ?>
+                                </div>
+                            </div><!-- ./col-md-4 --> 
                         <?php endwhile; ?>
-                    <?php else : ?>
-                        <p><?php __('No latest News Found'); ?></p>
+                        <?php wp_reset_postdata(); ?>
+                            <?php else : ?>
+                                <p><?php __('No latest News Found'); ?></p>
                     <?php endif; ?>
+                  
                 </div><!-- ./col-md-12 -->
             </div><!-- ./row -->
         </div><!-- ./container -->
