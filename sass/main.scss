@@ -5,6 +5,21 @@ $red: #e74c3c;
     Custom Style after nav theme
    ---------------------------------------------------- */
 
+body {
+  font-family: var(--font1);
+  color: var(--gray);
+}
+
+a {
+  color: var(--link-color);
+
+  &:hover {
+    color: var(--link-color-hover);
+  }
+}
+
+
+
 /* Custom container for nav */
 .custom-container {
   max-height: 50px;
@@ -36,7 +51,7 @@ $red: #e74c3c;
 
   h1 {
     color: var(--white);
-    font-size: 80px;
+    font-size: 65px;
     padding-bottom: 20px;
   }
 
