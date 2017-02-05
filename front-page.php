@@ -115,10 +115,11 @@
                             'category_name' => 'news',
                             'posts_per_page' => 3,
                         ) ); 
+                        $i = 1;
                     ?>
                     <?php if ( $the_query->have_posts() ) : ?>
                         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                            <div class="col-md-4">
+                            <div class="col-md-4" id="animation-element-<?php echo $i++; ?>">
                                 <?php if(has_post_thumbnail( )): ?>
                                     <div class="post-thumb-news">
                                         <?php the_post_thumbnail('news-thumb'); ?> <!-- call specific thumb format in setup -->
