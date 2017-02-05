@@ -7,6 +7,7 @@
 
 // general includes
     require get_template_directory().'/inc/setup.php';
+    require get_template_directory().'/inc/activate.php';
     require get_template_directory().'/inc/widgets.php';
     require get_template_directory().'/inc/front/enqueue.php';
     require get_template_directory().'/inc/front/excerpt.php';
@@ -26,10 +27,12 @@
 
 //Action & Filter Hooks
     // Actions
-    add_action( 'wp_enqueue_scripts', 'wpb_enqueue' );
     add_action( 'after_setup_theme', 'wpb_setup_theme' );
+    add_action( 'after_setup_theme', 'wpb_activate' );
+    add_action( 'after_setup_theme', 'custom_logo_setup' );    
     add_action( 'widgets_init', 'wpb_init_widgets');
-    add_action( 'after_setup_theme', 'custom_logo_setup' );
+    add_action( 'wp_enqueue_scripts', 'wpb_enqueue' );
+
 
     // Filters
     add_filter( 'excerpt_length', 'wpb_set_excerpt_lenght' );
