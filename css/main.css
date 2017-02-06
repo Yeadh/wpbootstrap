@@ -282,9 +282,10 @@ textarea {
 }
 
 .post-news {
-  height: 345px;
+  height: 350px;
   overflow: hidden;
   margin-bottom: 100px;
+  box-shadow: 1px 2px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .post-news-thumb {
