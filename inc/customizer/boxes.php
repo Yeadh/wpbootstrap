@@ -11,6 +11,18 @@
             'priority'      => 150
     ));
 
+    //Section title 
+    $wp_customize->add_setting('section_title', array(
+        'default'   => sprintf(__('Section title for boxes', 'wpbootstrap'))
+    ));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'section_title_control', array(
+        'label'     => __('Section Title', 'wpbootstrap'),
+        'section'   => 'highlight_boxes',
+        'settings'  => 'section_title',
+        'type'      => 'text'
+        
+    )));
+
 /* ==============================
         BOX1
    ============================== */ 

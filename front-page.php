@@ -78,6 +78,7 @@
    <section class="boxes">
        <div class="container">
            <div class="row">
+               <h1 class="boxes-title text-center"><?php echo get_theme_mod('section_title', 'Section title for boxes'); ?></h1>
                <div class="col-md-1 center-boxes"><!-- white column space --></div>
                 <div class="col-md-3 box">
                     <p class="text-center"><i class="fa <?php echo get_theme_mod('icon_code_box_1', 'fa-user'); ?>"></i></p>
