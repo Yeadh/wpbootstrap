@@ -292,6 +292,14 @@ textarea {
   box-shadow: 1px 2px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 767px) {
+  .post-news {
+    height: 480px;
+    text-align: center;
+    box-shadow: none;
+  }
+}
+
 .post-news-thumb {
   cursor: pointer;
 }
@@ -303,6 +311,12 @@ textarea {
 
 .post-news-thumb:hover ~ .latest-new-article {
   top: -200px;
+}
+
+@media (max-width: 767px) {
+  .post-news-thumb:hover ~ .latest-new-article {
+    top: -60px;
+  }
 }
 
 .latest-new-article {
@@ -322,4 +336,16 @@ textarea {
 
 .latest-new-article:hover {
   top: -200px;
+}
+
+@media (max-width: 767px) {
+  .latest-new-article {
+    top: -60px;
+  }
+  .latest-new-article h3 {
+    padding-top: 12px;
+  }
+  .latest-new-article:hover {
+    top: -60px;
+  }
 }

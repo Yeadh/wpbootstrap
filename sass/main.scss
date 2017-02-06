@@ -321,6 +321,12 @@ textarea {
   overflow: hidden;
   margin-bottom: 100px;
   box-shadow: 1px 2px 20px 0 rgba(0,0,0,.5);
+
+  @media (max-width: 767px) {
+    height: 480px;
+    text-align: center;
+    box-shadow: none; 
+  }
 }
 
 .post-news-thumb {
@@ -331,6 +337,9 @@ textarea {
   }
   &:hover ~ .latest-new-article {
     top: -200px;
+    @media (max-width: 767px) {
+      top: -60px;
+    }
   }
 }
 
@@ -349,5 +358,15 @@ textarea {
   }
   &:hover{
     top: -200px;
+  }
+
+  @media (max-width: 767px) {
+    top: -60px;
+    h3 {
+      padding-top: 12px;
+    }
+    &:hover {
+      top: -60px;
+    }
   }
 }
