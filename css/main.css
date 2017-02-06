@@ -282,9 +282,13 @@ textarea {
 }
 
 .post-news {
-  height: 283px;
+  height: 345px;
   overflow: hidden;
   margin-bottom: 100px;
+}
+
+.post-news-thumb {
+  cursor: pointer;
 }
 
 .post-news-thumb img {
@@ -292,9 +296,14 @@ textarea {
   height: auto;
 }
 
+.post-news-thumb:hover ~ .latest-new-article {
+  top: -200px;
+}
+
 .latest-new-article {
+  padding: 0 15px;
   position: relative;
-  top: -60px;
+  top: 0px;
   background-color: var(--white);
   transition: all 300ms ease-in;
   padding-bottom: 80px;
@@ -303,8 +312,7 @@ textarea {
 
 .latest-new-article h3 {
   padding-top: 8px;
-  padding-bottom: 12px;
-  text-align: center;
+  padding-bottom: 14px;
 }
 
 .latest-new-article:hover {

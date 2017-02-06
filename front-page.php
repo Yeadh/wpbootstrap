@@ -119,15 +119,18 @@
                     ?>
                     <?php if ( $the_query->have_posts() ) : ?>
                         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                            <div class="col-md-4 post-news" id="animation-element-<?php echo $i++; ?>">
-                                <?php if(has_post_thumbnail( )): ?>
-                                    <div class="post-news-thumb">
-                                        <?php the_post_thumbnail('news-thumb'); ?> <!-- call specific thumb format in setup -->
-                                    </div><!-- ./post-thumb-news -->
-                                <?php endif; ?>
-                                <div class="latest-new-article">
-                                    <h3 class=""><?php the_title(); ?></h3>
-                                        <?php the_excerpt(); ?>
+                            <div class="col-md-4" id="animation-element-<?php echo $i++; ?>">
+                                <div class="post-news">
+                                    <?php if(has_post_thumbnail( )): ?>
+                                        <div class="post-news-thumb">
+                                            <?php the_post_thumbnail('news-thumb'); ?> <!-- call specific thumb format in setup -->
+                                        </div><!-- ./post-thumb-news -->
+                                    <?php endif; ?>
+                                    <div class="latest-new-article">
+                                        <h3 class=""><?php the_title(); ?></h3>
+                                            <?php the_excerpt(); ?>
+                                            <a class="btn btn-default" href="<?php the_permalink(); ?>">View</a>
+                                    </div>
                                 </div>
                             </div><!-- ./col-md-4 --> 
                         <?php endwhile; ?>
