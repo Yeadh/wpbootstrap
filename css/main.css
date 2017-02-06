@@ -281,7 +281,32 @@ textarea {
   }
 }
 
-.post-thumb-news img {
+.post-news {
+  height: 283px;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.post-news-thumb img {
   width: 100%;
   height: auto;
+}
+
+.latest-new-article {
+  position: relative;
+  top: -60px;
+  background-color: var(--white);
+  transition: all 300ms ease-in;
+  padding-bottom: 80px;
+  cursor: pointer;
+}
+
+.latest-new-article h3 {
+  padding-top: 8px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.latest-new-article:hover {
+  top: -200px;
 }
